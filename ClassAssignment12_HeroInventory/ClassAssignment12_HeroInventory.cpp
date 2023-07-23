@@ -28,7 +28,7 @@ int main()
     std::cout << inventory[0].size() << " letters in it.\n\n";
 
     std::cout << "You found a healing potion!";
-    if (numItems < MAX_ITEMS) {
+    if (numItems < MAX_ITEMS) {                                 //Checks if the inventory has enough space to take a new item. Prevents an array error.
         inventory[numItems++] = "healing potion";
     }
     else {
